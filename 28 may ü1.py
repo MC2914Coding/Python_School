@@ -1,15 +1,20 @@
-userinput = input("Wie heisst ihre datei? \n")
+userfile = input("Name der Datei: ")
 
-if(userinput == "myfile.txt"):
-  f = open(userinput, "w")
-  f.write("""
-  WMS
-  IMS
-  """)
+o = open(userfile, "x")
 
-  f = open(userinput, "r")
-  for x in f:
-    print(x)
+o = open(userfile, "w")
+o.write("""
+HERZLICH WILLKOMMEN! 
+Eine Schule, zwei Abteilungen, drei Angebote. 
+Wirtschaftsgymnasium 
+Wirtschaftsmittelschule 
+Informatikmittelschule 
+""")
 
-else:
-  a = open(userinput, "x")
+while True:
+    a = input("text der neuen zeile: ")
+    if a != 'q':
+        o.write(a + "\n")
+    else:
+        o.close()
+        break
