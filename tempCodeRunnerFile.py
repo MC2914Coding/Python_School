@@ -1,1 +1,1 @@
-elif user_choice == 'paper':
+sorted
