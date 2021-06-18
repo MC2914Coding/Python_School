@@ -1,9 +1,8 @@
 import csv, os
 print(os.getcwd())
-with open('/Users/ims_schulacc/Desktop/Python_School/PY/Obj_or_Py/email-password-recovery-code.csv') as file:
-    reader = csv.reader(file, delimiter=";")
+with open('/Users/ims_schulacc/Desktop/Python_School/PY/Obj_or_Py/email-password-recovery-code.csv', 'r') as file:
+    reader = csv.reader(file)
     for content in reader:
-        #print(content[1])
-        if content[1] == '9346':
-            for values in content:
-                print(values)
+        if content == "9012":
+            for x in content:
+                print()
