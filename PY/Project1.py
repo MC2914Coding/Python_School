@@ -11,7 +11,7 @@ for root, dirs, files in os.walk(x): #loop thorugh the root, the directorys and 
       #print(file_contents)
       if(file_contents == user_file_conent):
       #print current path 
-        print(root, name)
+        print(name)
         
 
 
