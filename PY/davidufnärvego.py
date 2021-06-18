@@ -4,8 +4,8 @@ if(a == "yes"):
 else:
   print("doch!")
 
-neger = input("wie bleed ka david eigentlich sii?? sehr/garnid")
-if(neger == "sehr"):
+neg = input("wie bleed ka david eigentlich sii?? sehr/garnid")
+if(neg == "sehr"):
   print("richtig")
 else:
   print("scho biz viel meh als das")
