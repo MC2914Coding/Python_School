@@ -12,17 +12,17 @@ int main(){
 int kgV(int num1, int num2){
   int start;
 
-  //Start the for loop at the bigger number
+  //Start the for loop with the bigger number
   if(num1 > num2){
       start = num1;
   } else {
       start = num2;
   }
 
-  //Check for the smallest number that is divisible by num1 and num2 simultaneously
+  //Check for the smallest number that is divisible by num1 and num2
   for(int i = start; i <= num1*num2; i++){
     if(i % num1 == 0 && i % num2 == 0){
-      printf("%d", i);
+      printf("The %d\n", i);
       break;
     }
   }
