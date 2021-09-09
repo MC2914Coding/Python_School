@@ -3,14 +3,24 @@
 int kgV(int num1, int num2);
 
 int main(){
-  int num1 = 5;
+  int num1 = 8;
   int num2 = 5;
 
   kgV(num1, num2);
 }
 
 int kgV(int num1, int num2){
-  for(int i = 1; i <= num1*num2; i++){
+  int start;
+
+  //Start the for loop at the bigger number
+  if(num1 > num2){
+      start = num1;
+  } else {
+      start = num2;
+  }
+
+  //Check for the smallest number that is divisible by num1 and num2 simultaneously
+  for(int i = start; i <= num1*num2; i++){
     if(i % num1 == 0 && i % num2 == 0){
       printf("%d", i);
       break;
