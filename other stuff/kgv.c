@@ -3,8 +3,8 @@
 int kgV(int num1, int num2);
 
 int main(){
-  int num1 = 6;
-  int num2 = 12;
+  int num1 = 5;
+  int num2 = 5;
 
   kgV(num1, num2);
 }
