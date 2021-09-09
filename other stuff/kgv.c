@@ -3,8 +3,8 @@
 int kgV(int num1, int num2);
 
 int main(){
-  int num1 = 8;
-  int num2 = 5;
+  int num1 = 12;
+  int num2 = 8;
 
   kgV(num1, num2);
 }
@@ -14,7 +14,7 @@ int kgV(int num1, int num2){
 
   //Check if one of the given numbers is 0
   if(num1 > 0 && num2 > 0){
-    
+
     //Start the for loop with the bigger number
     if(num1 > num2){
         start = num1;
