@@ -1,6 +1,6 @@
 a = 5
 b = 8
-c = 15
+c = a*b
 for x in range(1, 101):
   if(x % c == 0):
     print("FizzBuzz")

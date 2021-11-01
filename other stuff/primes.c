@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void){
-  int n = 4;
+  int n = 10;
   int sol = 0;
 
   //Include 2
@@ -13,10 +13,11 @@ int main(void){
   for(int j = 0; j <= n; j++){ 
     if(j > 1){ 
       for(int i = 2; i <= j/2; i++){
-        if(j % i == 0){
+        if(j % i == 0){ //if it's divisible by another number other than one and itself
           break;
         } else {
-          sol+=1;
+          printf("%d", j);
+          sol++;
           break;
         }
       }
